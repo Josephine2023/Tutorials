@@ -14,14 +14,14 @@
   - wget https://raw.githubusercontent.com/Josephine2023/Tutorials/main/service_client/service_member_function.py 
   
 # Running server and client
-  In ros2_ws:
+  - In ros2_ws:
       - rosdep install -i --from-path src --rosdistro foxy -y
       - colcon build --packages-select py_srvcli
-  In new terminal
+  - In new terminal
       - cd ros2_ws
       - source install/setup.bash
       - ros2 run py_srvcli service
-  In new terminal
+  - In new terminal
       - cd ros2_ws
       - source install/setup.bash
       - ros2 run py_srvcli client 2 3
