@@ -12,12 +12,12 @@ https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries/Writing-A-Simpl
   1. source /opt/ros/foxy/setup.bash
   2. cd ros2_ws
   3. cd src
-    - if there are any duplicate test packages: rm -r <name>
+    - if there are any duplicate test packages: rm -r name of package
   
 ## Create package
-  4. ros2 pkg create --build-type ament_python <name>
-  5. cd <package name>
-  6. cd <package name>
+  4. ros2 pkg create --build-type ament_python name of package
+  5. cd package name
+  6. cd package name
   
 ## Import python files
   7. Import github files: the code here is specific to this repository and file names
@@ -40,8 +40,8 @@ https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries/Writing-A-Simpl
       In new terminal:
           cd ros2_ws
           source install/setup.bash
-          ros2 run <name of package> talker
+          ros2 run name of package talker
       In new terminal:
           cd ros2_ws
           source install/setup.bash
-          ros2 run <name of package> listener
+          ros2 run name of package listener
