@@ -1,4 +1,4 @@
-# pubsubs
+# Publisher & Subscriber tutorial
 Based on Ros2 Publisher/ Subscriber tutorial from:
 https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.html
 
