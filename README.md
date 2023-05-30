@@ -13,9 +13,13 @@ https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries/Writing-A-Simpl
   2. cd ros2_ws
   3. cd src
     - if there are any duplicate test packages: rm -r <name>
+  
+## Create package
   4. ros2 pkg create --build-type ament_python <name>
   5. cd <package name>
   6. cd <package name>
+  
+## Import python files
   7. Import github files: the code here is specific to this repository and file names
       wget https://github.com/Josephine2023/pubsubs/raw/main/publisher.py
       wget https://github.com/Josephine2023/pubsubs/raw/main/subscriber.py
@@ -27,7 +31,9 @@ https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries/Writing-A-Simpl
   10. In setup.py add:
         'talker = <name of package>.<name of publisher function>:main'
         'listener = <name of package>.<name of subscriber function>:main'
-  11. Build and run both nodes
+  
+## Running both files
+  11. Build and run both files
       In ros2_ws:
           rosdep install -i --from-path src --rosdistro foxy -y
           colcon build --packages-select <name of package>
